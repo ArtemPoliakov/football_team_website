@@ -1,0 +1,30 @@
+.navStyle {
+    background-color: #6de9da;
+}
+
+.listStyle {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.listElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1em;
+    padding-inline: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: red;
+    cursor: pointer;
+}
