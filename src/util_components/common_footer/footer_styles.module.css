@@ -1,0 +1,13 @@
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--contrast-text-color);
+    border-top: 1px solid var(--light-border-color);
+    padding: 3rem 0.5rem;
+}
