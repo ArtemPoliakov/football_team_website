@@ -3,7 +3,7 @@ import GlobalNavbar from "./util_components/global_navbar/GlobalNavbar"
 import IndexPage from "./pages/index_page/components/IndexPage"
 import AboutPage from "./pages/about_page/components/AboutPage"
 import ContactPage from "./pages/contact_page/components/ContactPage"
-import CommonFooter from "./util_components/CommonFooter"
+import CommonFooter from "./util_components/common_footer/CommonFooter"
 
 function App() {
   const router = createBrowserRouter(
