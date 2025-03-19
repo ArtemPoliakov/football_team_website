@@ -1,7 +1,9 @@
 :root {
-    --primary-color: #007BFF; /* Electric Blue for buttons and highlights */
-    --secondary-color: #1A1A2E; /* Dark Navy for background elements */
-    --accent-color: #FF6B00; /* Neon Orange for CTA buttons and key highlights */
-    --background-color: #F8F9FA; /* Light Gray for a clean and fresh look */
-    --text-color: #333333; /* Deep Charcoal for strong contrast */
+    --primary-color: #357F83;
+    --secondary-color: #E3B029; 
+    --accent-color: #D88A1E;
+    --background-color: #CEE4DB; 
+    --text-color: #333333;
+    --contrast-text-color: #000000;
+    --darker-color: #939965;
 }

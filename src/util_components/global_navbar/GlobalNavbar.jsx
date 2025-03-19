@@ -8,17 +8,20 @@ const GlobalNavbar = () => {
       <ul className={classes.listStyle}>
         <NavbarLiComponent path="/" name="Головна" />
         <NavbarLiComponent path="about" name="Про нас" />
-        <NavbarLiComponent path="contact" name="Зареєструватись!" />
+        <NavbarLiComponent
+          path="contact"
+          name="Зареєструватись!"
+          linkClassName={classes.callToActionNavbarLink} />
       </ul>
     </nav>
   )
 }
 
 const NavbarLiComponent = (props) => {
-  const { path, name } = props;
+  const { path, name, linkClassName=classes.navbarLink } = props;
   return (
-    <li className={classes.listElement}>
-      <Link to={path} className={classes.link}>{name}</Link>
+    <li className={classes.NavbarElement}>
+      <Link to={path} className={linkClassName}>{name}</Link>
     </li>
   )  
 }
