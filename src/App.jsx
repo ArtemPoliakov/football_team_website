@@ -5,6 +5,9 @@ import AboutPage from "./pages/about_page/components/AboutPage"
 import ContactPage from "./pages/contact_page/components/ContactPage"
 import CommonFooter from "./util_components/common_footer/CommonFooter"
 
+import global_container_styles from './global_styles/global_container_styles.module.css'
+
+
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -21,11 +24,11 @@ function App() {
 
 const Root = () => {
   return (
-    <>
+    <div className={global_container_styles.globalPageFlexContainer}>
       <GlobalNavbar />
       <Outlet />
       <CommonFooter />
-    </>
+    </div>
   ) 
 }
 

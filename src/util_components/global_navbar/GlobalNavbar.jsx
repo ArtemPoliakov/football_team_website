@@ -4,16 +4,21 @@ import classes from './navbar_styles.module.css'
 
 const GlobalNavbar = () => {
   return (
-    <nav className={classes.navStyle}>
-      <ul className={classes.listStyle}>
-        <NavbarLiComponent path="/" name="Головна" />
-        <NavbarLiComponent path="about" name="Про нас" />
-        <NavbarLiComponent
-          path="contact"
-          name="Зареєструватись!"
-          linkClassName={classes.callToActionNavbarLink} />
-      </ul>
-    </nav>
+    <>
+      <div className={classes.navbarFlexContainer}>
+        <img className={classes.logo} src="src\assets\img\logo.png"/>
+        <nav className={classes.navStyle}>
+          <ul className={classes.listStyle}>
+            <NavbarLiComponent path="/" name="Головна" />
+            <NavbarLiComponent path="about" name="Про нас" />
+            <NavbarLiComponent
+              path="contact"
+              name="Зареєструватись!"
+              linkClassName={classes.callToActionNavbarLink} />
+          </ul>
+        </nav>
+      </div>
+    </>
   )
 }
 

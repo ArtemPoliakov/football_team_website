@@ -5,7 +5,7 @@ const MainIndexSection = () => {
     return (
     <>
         <header className={classes.header}>
-            <h1>THE NAME OF THE CLUB</h1>
+            <h1>Футбольний клуб "FOOTBALL STARS"</h1>
        </header>
        <main className={classes.main}>
             <FactSection>Fact 1</FactSection>

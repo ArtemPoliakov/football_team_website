@@ -1,6 +1,21 @@
+.navbarFlexContainer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-top: 0.2em;
+}
+
 .navStyle {
    font-size: 1.2rem;
-   margin-top: 0.2em;
+   margin-right: auto;
+}
+
+.logo {
+    height: 4em;
+    width: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: 2em;
 }
 
 .listStyle {
