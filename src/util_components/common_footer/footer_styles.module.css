@@ -1,11 +1,70 @@
 .footerContainer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: auto;
+    margin-inline: 4em;
+    max-width: 100vw;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: var(--contrast-dark-color);
+    padding: 1em 2em;
+}
+.footer-element {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+.footer__club-name {
+    margin-right: auto;
+}
+.footer__contacts {
+    align-items: center;
+}
+
+.footer__icon-container {
+    margin-left: auto;
+}
+
+.footer__contacts__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__icon--up {
+    cursor: pointer;
+    color: var(--contrast-dark-color);
+    scale: 1.5;
+    transition: scale 0.3s ease-in-out;
+}
+
+.footer__icon--up:hover {
+    scale: 2;
+}
+
+
+
+/*.footerContainer {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: auto;
-    width: 100%;
+    margin-inline: 4em;
+    max-width: 100vw;
+    border-radius: 15px;
     background-color: var(--primary-color);
-    color: var(--contrast-text-color);
-    border-top: 1px solid var(--light-border-color);
-    padding: 3rem 0.5rem;
+    color: var(--contrast-dark-color);
+    padding: 1em 2em;
 }
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__contacts__content {
+    list-style: none;
+}*/

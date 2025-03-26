@@ -24,7 +24,7 @@ function App() {
 
 const Root = () => {
   return (
-    <div className={global_container_styles.globalPageFlexContainer}>
+    <div className={global_container_styles.globalPageFlexContainer} id="top">
       <GlobalNavbar />
       <Outlet />
       <CommonFooter />

@@ -1,12 +1,73 @@
 :root {
-    --primary-color: #357F83;
-    --secondary-color: #E3B029; 
-    --accent-color: #D88A1E;
-    --background-color: #CEE4DB; 
-    --text-color: #333333;
-    --contrast-text-color: #000000;
-    --darker-color: #939965;
-
-    --test-background-color: #f8f9fa;
-    --light-border-color: #e9ecef;
+    --primary-color: #cfe26e;
+    --secondary-color: #cfe26e;
+    --accent-color: #E2F878;
+    --accent-text-color: #E2F878;
+    --contrast-dark-color: #052702;
+    --background-color-gradient: linear-gradient(45deg,
+     #031401 0%,
+     #052702 20%,
+     #10580a 60%,
+     #052702 80%,
+     #031401 100%
+     );
 }
+
+/*old accent #E2F878*/
+
+/*linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255, 0))*/
+
+/*#efffa1 secondary v2*/
+
+/* Palette all-green
+        --primary-color: #9ACD32;
+        --secondary-color: rgba(153, 205, 50, 0.7);
+        --accent-color: #E2F878;
+        --background-color: linear-gradient(45deg,
+            #031401 0%,
+            #052702 20%,
+            #10580a 60%,
+            #052702 80%,
+            #031401 100%);
+        --text-color: #052702;
+        --contrast-text-color: #052702;
+        --darker-color: #939965;
+    
+        --test-background-color: #f8f9fa;
+        --light-border-color: #e9ecef;
+*/
+
+/*#063402*/
+/* Main palette
+        --primary-color: #357F83;
+        --secondary-color: #E3B029;
+        --accent-color: #D88A1E;
+        --background-color: #CEE4DB;
+        --text-color: #333333;
+        --contrast-text-color: #ffae00;
+        --darker-color: #939965;
+    
+        --test-background-color: #f8f9fa;
+        --light-border-color: #e9ecef;
+        */
+
+
+
+
+/*--text-color: #333333;
+--contrast-text-color: #000000;*/
+
+/*   */
+
+        /*:root {
+            --primary-color: #294E28;
+            --secondary-color: #316C40;
+            --accent-color: #E2F878;
+            --background-color: #FDFFF6;
+            --text-color: #333333;
+            --contrast-text-color: #000000;
+            --darker-color: #939965;
+        
+            --test-background-color: #f8f9fa;
+            --light-border-color: #e9ecef;
+        }*/

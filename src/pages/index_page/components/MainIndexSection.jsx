@@ -8,7 +8,7 @@ const MainIndexSection = () => {
             <h1>Футбольний клуб "FOOTBALL STARS"</h1>
        </header>
        <main className={classes.main}>
-            <ul>
+            <ul className={classes["fact-list"]}>
                 <FactSection>Заняття для дітей від трьох років</FactSection>
                 <FactSection>Досвідчені та сертифіковані тренери</FactSection>
                 <FactSection>Перше тренування безкоштовно!</FactSection>  
