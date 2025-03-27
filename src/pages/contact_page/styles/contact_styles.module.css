@@ -63,4 +63,5 @@
     background-color: var(--contrast-dark-color);
     color: var(--accent-text-color);
     scale: 1.1;
+    cursor: pointer;
 }

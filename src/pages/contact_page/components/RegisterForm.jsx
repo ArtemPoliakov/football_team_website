@@ -4,6 +4,7 @@ import classes from './../styles/contact_styles.module.css'
 const RegisterForm = () => {
 
     const handleSubmit = (e) => {
+        e.preventDefault();
         const formData = new FormData(e.target);
         const payload = Object.fromEntries(formData);
         let message = "";
