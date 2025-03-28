@@ -6,6 +6,7 @@ import ContactPage from "./pages/contact_page/components/ContactPage"
 import CommonFooter from "./util_components/common_footer/CommonFooter"
 
 import global_container_styles from './global_styles/global_container_styles.module.css'
+import FramePage from "./pages/frame_page/FramePage"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route index element={<IndexPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/frames" element={<FramePage />} />
       </Route>
     )
   )

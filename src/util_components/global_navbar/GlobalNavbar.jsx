@@ -6,11 +6,12 @@ const GlobalNavbar = () => {
   return (
     <>
       <div className={classes.navbarFlexContainer}>
-        <img className={classes.logo} src="src\assets\img\logo.png"/>
+        <img className={classes.logo} src="src\assets\img\logo_v2.png"/>
         <nav className={classes.navStyle}>
           <ul className={classes.listStyle}>
             <NavbarLiComponent path="/" name="Головна" />
             <NavbarLiComponent path="about" name="Про нас" />
+            <NavbarLiComponent path="frames" name="Огляд сайту" />
             <NavbarLiComponent
               path="contact"
               name="Зареєструватись!"

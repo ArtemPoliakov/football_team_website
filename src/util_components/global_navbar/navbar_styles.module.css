@@ -17,6 +17,8 @@
     object-fit: contain;
     margin-left: auto;
     margin-right: 2em;
+    background-color: aliceblue;
+    border-radius: 30px;
 }
 
 .listStyle {
