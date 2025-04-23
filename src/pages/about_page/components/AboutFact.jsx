@@ -5,9 +5,9 @@ const AboutFact = (props) => {
     const {row, column, heading, paragraph} = props;
     
     return (
-        <section className={classes["about__fact"]} style={{ gridRow: row, gridColumn: column }}>
-            <h2 className={classes["about__fact__heading"]}>{heading}</h2>
-            <p className={classes["about__fact__paragraph"]}>{paragraph}</p>
+        <section className={classes["fact"]} style={{ gridRow: row, gridColumn: column }}>
+            <h2 className={classes["fact__heading"]}>{heading}</h2>
+            <p className={classes["fact__paragraph"]}>{paragraph}</p>
         </section>
     )
 }

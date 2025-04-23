@@ -44,7 +44,6 @@ const RegisterForm = () => {
                   <input type="date"
                       id="birthday"
                       name="birthdayDate"
-                      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                       maxLength="320"
                       required
                       className={classes["contact__register__input"]}/>
