@@ -14,6 +14,7 @@
 
 .global__navbar {
     margin-right: auto;
+    display: flex;
 }
 
 .logo {
@@ -69,4 +70,33 @@
 .navbar__link--call-to-action:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.navbar__open-sandwich-icon {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    z-index: 999;
+    scale: 2;
+    color: var(--accent-color);
+    transition: scale 0.3s ease-in-out;
+    display: none;
+}
+.navbar__open-sandwich-icon:hover { 
+    scale: 2.2;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .navbar__open-sandwich-icon {
+        display: block;
+    }
+
+    .desctop-only {
+        display: none;
+    }
+
+    .navbar__logo {
+        margin-left: 1em;
+    }
 }

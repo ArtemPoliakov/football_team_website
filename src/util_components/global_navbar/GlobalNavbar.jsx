@@ -1,9 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useRef } from 'react'
 import classes from './navbar_styles.module.css'
 import clsx from 'clsx'
+import NavbarLiComponent from './components/NavbarLiComponent'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SandwichNavbar from './components/SandwichNavbar'
 
 const GlobalNavbar = () => {
+  const sandwichRef = useRef(null);
   return (
     <>
       <div className={classes["navbar-flex-container"]}>
@@ -21,25 +25,13 @@ const GlobalNavbar = () => {
               linkClassName={"navbar__link--call-to-action"} />
           </ul>
         </nav>
+        <FontAwesomeIcon icon={faBars}
+              className={classes["navbar__open-sandwich-icon"]}
+              onClick={() => {sandwichRef.current.style.transform = "translateX(0)"}}/>
       </div>
+      <SandwichNavbar sandwichRef={sandwichRef} />
     </>
   )
-}
-
-const NavbarLiComponent = (props) => {
-  const {
-    path,
-    name,
-    linkClassName = "navbar__link--simple"
-        } = props;
-  return (
-    <li className={classes["navbar__element"]}>
-      <Link to={path}
-            className={clsx(classes["navbar__link"], classes[linkClassName])}>
-        {name}
-      </Link>
-    </li>
-  )  
 }
 
 export default GlobalNavbar

@@ -17,7 +17,7 @@ const RegisterForm = () => {
   return (
       <main className={classes["register"]}>
           <form onSubmit={handleSubmit}>
-              <div className={classes["contact__register__input-block"]}>
+              <div className={classes["contact__register-input-block"]}>
               <label for="phone">Номер телефону</label>
                   <input type="tel"
                       id="phone"
@@ -25,10 +25,10 @@ const RegisterForm = () => {
                       placeholder="xxx-xxx-xxxx"
                       pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}"
                       required
-                      className={classes["contact__register__input"]}
+                      className={classes["contact__register-input"]}
                       />
               </div>
-              <div className={classes["contact__register__input-block"]}>
+              <div className={classes["contact__register-input-block"]}>
               <label for="email">Email</label>
                   <input type="email"
                       id="email"
@@ -37,18 +37,18 @@ const RegisterForm = () => {
                       pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                       maxLength="320"
                       required
-                      className={classes["contact__register__input"]}/>
+                      className={classes["contact__register-input"]}/>
                </div>
-              <div className={classes["contact__register__input-block"]}>
+              <div className={classes["contact__register-input-block"]}>
               <label for="birthday">Дата народження дитини</label>
                   <input type="date"
                       id="birthday"
                       name="birthdayDate"
                       maxLength="320"
                       required
-                      className={classes["contact__register__input"]}/>
+                      className={classes["contact__register-input"]}/>
                </div>
-              <button type="submit" className={classes["contact__register__button"]}>
+              <button type="submit" className={classes["contact__register-button"]}>
                   Записатись на заняття
               </button>
           </form>

@@ -22,14 +22,14 @@
    margin-top: 1.5em;
 }
 
-.contact__register__input-block {
+.contact__register-input-block {
     display: flex;
     flex-direction: column;
     color: var(--contrast-dark-color);
     margin-bottom: 0.5em;
 }
 
-.contact__register__input {
+.contact__register-input {
     border-radius: 5px;
     width: 100%;
     padding: 0.2rem 0.5rem;
@@ -37,13 +37,13 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: border, box-shadow 0.3s ease-out;
 }
-.contact__register__input:focus {
+.contact__register-input:focus {
    outline: none;
    border: 2px solid var(--contrast-dark-color);
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.contact__register__button {
+.contact__register-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@
     transition: background-color, scale 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.contact__register__button:hover {
+.contact__register-button:hover {
     background-color: var(--contrast-dark-color);
     color: var(--accent-text-color);
     scale: 1.1;

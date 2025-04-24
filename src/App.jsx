@@ -9,7 +9,6 @@ import global_container_styles from './global_styles/global_container_styles.mod
 import FramePage from "./pages/frame_page/FramePage"
 import GalleryPage from "./pages/gallery_page/GalleryPage"
 
-
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
