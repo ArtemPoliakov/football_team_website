@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './../styles/about_styles.module.css'
+import reusableClasses from './../../../global_styles/reusable.module.css'
 import AboutFact from './AboutFact'
 import AboutImage from './AboutImage'
 import clsx from 'clsx'
@@ -16,7 +17,7 @@ const AboutPage = () => {
 
   return (
     <div className={classes["about-grid-container"]}>
-      <header className={clsx(classes["header"], classes["header__about"])}>
+      <header className={clsx(reusableClasses["header"], classes["header__about"])}>
         <h1>Про нас</h1>
       </header>
 

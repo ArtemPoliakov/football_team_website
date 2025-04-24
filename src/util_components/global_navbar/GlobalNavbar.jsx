@@ -13,6 +13,7 @@ const GlobalNavbar = () => {
           <ul className={classes["navbar__list"]}>
             <NavbarLiComponent path="/" name="Головна" />
             <NavbarLiComponent path="about" name="Про нас" />
+            <NavbarLiComponent path="gallery" name="Галерея" />
             <NavbarLiComponent path="frames" name="Огляд сайту" />
             <NavbarLiComponent
               path="contact"

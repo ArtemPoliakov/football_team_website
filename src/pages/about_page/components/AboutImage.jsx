@@ -1,10 +1,10 @@
 import React from 'react'
-import classes from './../styles/about_styles.module.css'
+import reusableClasses from './../../../global_styles/reusable.module.css'
 
 const AboutImage = (props) => {
     const { row, column, src } = props;
   return (
-      <img src={src} className={classes["image"]} style={{gridRow: row, gridColumn: column}}/>
+      <img src={src} className={reusableClasses["image"]} style={{gridRow: row, gridColumn: column}}/>
   )
 }
 
