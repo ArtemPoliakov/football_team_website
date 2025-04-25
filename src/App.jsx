@@ -8,6 +8,7 @@ import CommonFooter from "./util_components/common_footer/CommonFooter"
 import global_container_styles from './global_styles/global_container_styles.module.css'
 import FramePage from "./pages/frame_page/FramePage"
 import GalleryPage from "./pages/gallery_page/GalleryPage"
+import InteractivePage from "./pages/interactive_page/InteractivePage"
 
 function App() {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/frames" element={<FramePage />} />
+        <Route path="/intr" element={<InteractivePage />} />
       </Route>
     )
   )
