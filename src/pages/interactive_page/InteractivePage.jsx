@@ -6,16 +6,21 @@ const InteractivePage = () => {
     const imgRef = useRef(null);
     const [currentTime, setCurrentTime] = useState("");
 
+    const [opacityTask5, setOpacityTask5] = useState(1);
+
     useEffect(() => {
         const intervalId = setInterval(setImageJumpingAccrossThePage, 1000); //1.2
 
         alterAllP(); //1.3
 
         const clockProcessId = setInterval(updateCLock, 1000); //1.4
+
+        const intervalIdTask5 = setInterval(erasePage, 100); //1.5
         
         return () => { 
             clearInterval(intervalId);
             clearInterval(clockProcessId);
+            clearInterval(intervalIdTask5);
         }
     }, []); 
 
@@ -50,6 +55,11 @@ const InteractivePage = () => {
     const updateCLock = () => {
        setCurrentTime(new Date().toLocaleTimeString());
     }
+
+    //1.5
+    const erasePage = () => {
+        setOpacityTask5(prev => Math.max(0, prev - 0.01));
+    }
     
 
     const jumpingImage =
@@ -66,7 +76,14 @@ const InteractivePage = () => {
         <div className={classes["clock"]}>CLOCK:
             <span>{currentTime}</span>
         </div>
-        
+        <div style={{
+                "backgroundColor": "red",
+                "color": "white",
+                "font-size": "3rem",
+                "opacity": opacityTask5,
+            }}>
+            ELEMENT TO BE ERASED
+        </div>
             <p> P1 Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             <p> P2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <div>DIV ELEMENT</div>

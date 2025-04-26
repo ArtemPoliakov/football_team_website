@@ -9,6 +9,7 @@ import global_container_styles from './global_styles/global_container_styles.mod
 import FramePage from "./pages/frame_page/FramePage"
 import GalleryPage from "./pages/gallery_page/GalleryPage"
 import InteractivePage from "./pages/interactive_page/InteractivePage"
+import InteractivePage2 from "./pages/interactive_page/InteractivePage2"
 
 function App() {
   const router = createBrowserRouter(
@@ -20,6 +21,7 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/frames" element={<FramePage />} />
         <Route path="/intr" element={<InteractivePage />} />
+        <Route path="/intr2" element={<InteractivePage2 />} />
       </Route>
     )
   )
