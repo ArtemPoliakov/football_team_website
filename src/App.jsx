@@ -10,6 +10,8 @@ import FramePage from "./pages/frame_page/FramePage"
 import GalleryPage from "./pages/gallery_page/GalleryPage"
 import InteractivePage from "./pages/interactive_page/InteractivePage"
 import InteractivePage2 from "./pages/interactive_page/InteractivePage2"
+import FlexPage from "./pages/flex_practic_page/FlexPage"
+import InteractivePage3 from "./pages/interactive_page/InteractivePage3"
 
 function App() {
   const router = createBrowserRouter(
@@ -22,6 +24,8 @@ function App() {
         <Route path="/frames" element={<FramePage />} />
         <Route path="/intr" element={<InteractivePage />} />
         <Route path="/intr2" element={<InteractivePage2 />} />
+        <Route path="/intr3" element={<InteractivePage3 />} />
+        <Route path="/flex" element={<FlexPage />} />
       </Route>
     )
   )

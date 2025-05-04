@@ -37,3 +37,179 @@
     overflow:unset;
     text-align: center;
 }
+
+
+.coloring-task-container {
+    display: flex;
+}
+
+.palette-flex-container {
+    display: flex;
+    align-items: center;
+    margin-inline: 1em;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.color-option-block {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: none;
+}
+
+.colored-square {
+    width: 6em;
+    height: 6em;
+    border: 1px solid rgb(55, 124, 154);
+    margin-left: auto;
+    margin-right: 3em;
+    background-color: black;
+}
+
+
+
+
+
+.intr-3__timer-task-container {
+    margin-inline: auto;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-inline: 4em;
+}
+
+.intr-3__timer-task-button {
+    padding-block: 1em;
+    padding-inline: 2em;
+    font-size: 1.2rem;
+    background-color: inherit;
+    color: var(--accent-text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    transition: background-color, scale 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.intr-3__timer-task-button:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-dark-color);
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.intr-3__timer-task-timer {
+    display: none;
+    margin-top: 1em;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    color: var(--contrast-dark-color);
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+}
+
+
+
+
+.notes-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    width: auto;
+    width: 100vw;
+}
+
+.notes-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 4em;
+}
+
+.note {
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--contrast-dark-color);
+    background-color: var(--accent-color);
+    border-radius: 15px;
+}
+
+.note:hover {
+    cursor: pointer;
+}
+
+.note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.note-form__label {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--accent-text-color);
+    border-radius: 15px;
+    border: 1px solid var(--accent-color);
+    padding: 0.5em;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+
+.note-form__input {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--contrast-dark-color);
+    border-radius: 15px;
+    border: 1px solid var(--accent-color);
+    padding: 0.5em;
+}
+
+.notes__form-submit-button {
+    align-self: center;
+    margin-top: 1em;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    font-size: 1.2rem;
+    background-color: inherit;
+    color: var(--accent-text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    transition: background-color, scale 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.notes__form-submit-button:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-dark-color);
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.note-container {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.delete-note-icon {
+    scale: 2;
+    margin-left: auto;
+    transition: scale 0.3s ease-in-out;
+}
+
+.delete-note-icon:hover {
+    scale: 2.2;
+    cursor: pointer;
+}
